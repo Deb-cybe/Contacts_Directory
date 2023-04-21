@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+
+  30% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  40% {
+    color: hsl(230, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+}
+
+body {
+  /* margin: 0; */
+  font: 100% / 1.5 Raleway, sans-serif;
+  color: hsl(230, 100%, 95%);
+  background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+  /* height: 100vh; */
+  /* display: flex; */
+}
+
+#heading {
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+}
+
+.form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+input[type="text"]:focus {
+  border: 2px solid #4caf50;
+  font-size: 1.05rem;
+  color: brown;
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+  font-size: 1.2rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  label {
+    font-size: 1rem;
+  }
+  input[type="text"] {
+    padding: 8px 12px;
+  }
+  input[type="number"] {
+    padding: 8px 12px;
+  }
+  input[type="submit"] {
+    padding: 10px 14px;
+  }
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  margin: 1.5rem;
+}
+.disp {
+  margin-bottom: 3rem;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  /* margin-bottom: 3rem; */
+  transition: all 0.3s ease-in-out;
+}
+td,
+th {
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  /* background-color: #555; */
+}
+tr:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+  table,
+  th,
+  /* td {
+    display: block;
+  } */
+  th {
+    text-align: center;
+  }
+}
+.edit {
+  background-color: unset;
+  border: none;
+  color: white;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 25%;
+}
+tr button:hover {
+  border: 1.5px solid pink;
+}
